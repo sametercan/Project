@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="controllers/controller.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+</head>
+
+<body class="bg-danger text-white" ng-controller="Controller">
+    <div class="container" ng-controller="mycontrol">
+        <h1 class="intro">Student Searching App</h1>
+        <div ng-app="myApp" ng-controller="myCtrl" class="mydiv">
+
+            <p>Name : <input type="text" ng-model="name" class="paragraf"></p>
+            <p>Surname : <input type="text" ng-model="surname" class="paragraf"> </p>
+            <button ng-click="changeName()" class="paragraf" id="buton">{{search}}</button>
+        </div>
+        <div ng-controller="AppCtrl" ng-app="mylist">
+            <table class="table table-striped">
+                <tr ng-repeat="item in studentlist">
+                    <td>{{item.name}}</td>
+                    <td>{{item.surname}}</td>
+                    <td>{{item.email}}</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="second">Add New Student</h2>
+        <div class="mydiv">
+
+            <p>Name : <input type="text" ng-model="stuname" class="paragraf"></p>
+            <p>Surname : <input type="text" ng-model="stusurname" class="paragraf"> </p>
+            <button class="paragraf" id="buton">Add</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

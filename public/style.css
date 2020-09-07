@@ -1,0 +1,24 @@
+.mybody {
+    background-color: #cccccc;
+}
+.intro{
+    margin-top: 100px;
+    text-align: center;
+}
+.mydiv{
+    margin-left: 400px;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+}   
+#buton{
+    width: 165px;
+    border-color: darkblue;
+    font-size: 20px;
+}
+.table {
+    margin-top: 100px;
+}
+.second{
+    margin-left: 400px;
+}
